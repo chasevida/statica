@@ -7,7 +7,7 @@ Basically it helps you drop the `.html` by transforming `blog/some-article.html`
 **Statica** is helpful if you are building a simple html based site (say for github pages) with roots but you want to keep your links pretty.
 
 [![Build Status](https://travis-ci.org/chasevida/statica.svg)](https://travis-ci.org/chasevida/statica.svg)
-[![Coverage Status](https://coveralls.io/repos/chasevida/statica.svg/badge.png)](https://coveralls.io/r/chasevida/statica.svg)
+[![Coverage Status](https://img.shields.io/coveralls/chasevida/statica.svg)](https://coveralls.io/r/chasevida/statica?branch=master)
 
 > **Note:** This plugin is in early development and as such is not considered stable. Early releases may change significantly.
 
@@ -35,7 +35,5 @@ module.exports =
 ##Gotchas
 There are a few things to watch out for.
 
-* Hard coded links are not be updated. This plugin works great with [roots dynamic content](https://www.npmjs.org/package/dynamic-content) as it is able to access and update a files url to match it's new location allowing proper linking. However, with static content it cannot do the same. So please keep in mind how this plugin transforms pages when adding any hard coded links.
+* Hard coded links are not updated. This plugin works great with [roots dynamic content](https://www.npmjs.org/package/dynamic-content) as it is able to access and update a files url to match it's new location allowing proper linking. However, with static content it cannot do the same. So please keep in mind how this plugin transforms pages when adding any hard coded links.
 * If you have a file `blog.html` and another `blog/index.html` you will get a error alerting you to a collision. Statica will stop roots compiling to let you resolve this conflict.
-
-
