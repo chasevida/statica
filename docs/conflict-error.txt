@@ -1,0 +1,6 @@
+You have a file path collision. The below files when transformed conflict.
+
+    1. %s
+    2. %s
+
+When compiled both paths will become: %s
